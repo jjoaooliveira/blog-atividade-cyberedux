@@ -1,0 +1,26 @@
+body {
+    background-image: url('https://www.smartworld.it/wp-content/uploads/2021/02/offerte-giochi-ea-amazon.png');
+    
+    /* https://cdn.zoomg.ir/2020/11/ea-play-games.jpg */
+    --bs-card-bg: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-registro {
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: auto;
+    border: 1px solid rgba(117, 116, 116, 0.554);
+    width: 480px;
+    margin-top: 20vh;
+    background-color: white;
+}
+
+.btn {
+    margin-top: 8px;
+}
+
+.form-label {
+    margin-top: 8px;
+}

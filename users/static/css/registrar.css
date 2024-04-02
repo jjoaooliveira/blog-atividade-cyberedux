@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(33, 33, 63);
+}
+
+.form-registro {
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: auto;
+    border: 1px solid rgba(117, 116, 116, 0.554);
+    width: 480px;
+    margin-top: 20vh;
+    background-color: white;
+}
+
+.marcador {
+    position: relative;
+    top: -34px;
+    color: #05cafc;
+    background-color: #4de4f83d;
+    width: fit-content;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.btn {
+    margin-top: 8px;
+}
+
+.form-label {
+    margin-top: 8px;
+}

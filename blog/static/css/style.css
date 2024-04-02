@@ -1,0 +1,131 @@
+@media only screen and (max-width: 1920px) {
+    .card {
+        width: 680px;
+        height: 500px;
+    }
+    
+    .card:hover {
+        width: 780px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .card {
+        width: 420px;
+        height: 480px;
+    }
+
+    .card:hover {
+        width: 520px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .card {
+        width: 320px;
+        height: 480px;
+    }
+
+    .card:hover {
+        width: 420px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        width: 260px;
+        height: 320px;
+    }
+
+    .card:hover {
+        width: 380px;
+    }
+}
+
+body {
+    background-color: #030316f0;
+}
+
+header {
+    width: 100%;
+    background-color: #1a1b38;
+    padding: 5px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    --bs-card-bg: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* width: 420px;
+    height: 480px; */
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    transition: 1s;
+    /* animation:  mover 20s alternate infinite; */
+}
+
+.card > .titulo {
+    font-size: 32px;
+}
+
+.teste {
+    margin: 20px;
+}
+
+/* .card:hover {
+    width: 720px;
+} */
+
+.carrousel:has(.card:hover) :not(:hover) {
+    /* transform: scale(0.9); */
+    opacity: 0.4;
+}
+
+nav > ul {
+    margin: 4px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-dinamico {
+    width: 240px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-dinamico > span {
+    color: white;
+}
+
+.carrousel {
+    /* width: 800px; */
+    margin: auto;
+    margin-top: 50px;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    overflow-y: auto;
+    gap: 1.2rem;
+    scroll-behavior: auto;
+    grid-auto-flow: column;
+    display: grid;
+}
+
+@keyframes mover {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-180vw, 0, 0);
+    }
+}

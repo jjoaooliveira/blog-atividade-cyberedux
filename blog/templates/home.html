@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block conteudo %}
+        {% for post in posts %}
+            <a 
+                href={{post.slug}} 
+                class="card" 
+                >
+                <div>
+                    <h2 class="titulo">{{ post.img.url }}</h2>
+                </div>
+            </a>
+        {% endfor %}
+    
+{% endblock %}
